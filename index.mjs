@@ -12,12 +12,12 @@ export const handler = async(event) => {
         <!DOCTYPE html>
         <html>
         <body>
-            <h3>Dados da requisicao:</h3>
+            <h3>Dados da requisição:</h3>
             <p>${event_body}</p>
         </body>
         </html>`,
         headers: {
-            "content-type": "text/html"
+            "content-type": "text/html;charset=UTF-8"
         }
     };
 };
