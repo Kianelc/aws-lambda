@@ -8,6 +8,16 @@ export const handler = async(event) => {
 
     return {
         statusCode: 200,
-        body: event_body,
+        body: `
+        <!DOCTYPE html>
+        <html>
+        <body>
+            <h3>Dados da requisição:</h3>
+            <p>${event_body}</p>
+        </body>
+        </html>`,
+        headers: {
+            "content-type": "text/html"
+        }
     };
 };
