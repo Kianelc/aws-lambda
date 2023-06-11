@@ -4,7 +4,7 @@ export const handler = async(event) => {
     // TODO implement
     const event_body = JSON.stringify(event);
 
-    log(`Executando evento: ${event_body}`);
+    log(`event: ${event_body}`);
 
     return {
         statusCode: 200,
